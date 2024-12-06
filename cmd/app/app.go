@@ -1,7 +1,7 @@
 package main
 
 import (
-	server "example/sqlsrv"
+	"internal/server"
 )
 
 func main() {

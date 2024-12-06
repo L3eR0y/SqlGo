@@ -2,6 +2,10 @@ module app
 
 go 1.23.2
 
-replace example/sqlsrv => ../../internal/server
+replace internal/server => ../../internal/server
 
-require example/sqlsrv v0.0.0-00010101000000-000000000000
+replace internal/handlers => ../../internal/handlers
+
+require internal/server v0.0.0-00010101000000-000000000000
+
+require internal/handlers v0.0.0-00010101000000-000000000000 // indirect
