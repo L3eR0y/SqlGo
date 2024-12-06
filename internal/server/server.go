@@ -7,9 +7,8 @@ import (
 )
 
 func Run(port string) {
-	fmt.Println("Server listening at " + port + " port...")
+	fmt.Printf("Server listening at %s", port)
 
 	http.HandleFunc("/", handlers.RootHandler)
 	http.ListenAndServe(port, nil)
-
 }
